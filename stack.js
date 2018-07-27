@@ -16,8 +16,19 @@ function Stack() {
   this.print = function() {
     console.log(items.toString());
   }
+  this.push = function(element) {
+    dataStack.push(element);
+  }
+  this.peek = function() {
+   return dataStack[0];
+  }
+  this.size = function() {
+   return dataStack.length;
+  }
 }
 var stack = new Stack();
 // console.log(stack.isEmpty());
 // console.log(stack.pop());
 // console.log(stack.print());
+=======
+
