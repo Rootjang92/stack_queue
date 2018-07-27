@@ -5,15 +5,30 @@
 // 2개의 stack으로 구현.
 
 function Stack() {
- var dataStack = [];
+  var items = [];
 
- this.push = function(element) {
-  dataStack.push(element);
- }
- this.peek = function() {
+  this.pop = function() {
+    return items.pop();
+  }
+  this.isEmpty = function() {
+    return items.length === 0;
+  }
+  this.print = function() {
+    console.log(items.toString());
+  }
+  this.push = function(element) {
+    dataStack.push(element);
+  }
+  this.peek = function() {
    return dataStack[0];
- }
- this.size = function() {
+  }
+  this.size = function() {
    return dataStack.length;
- }
-} //
+  }
+}
+var stack = new Stack();
+// console.log(stack.isEmpty());
+// console.log(stack.pop());
+// console.log(stack.print());
+=======
+
