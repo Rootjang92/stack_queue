@@ -30,5 +30,5 @@ var stack = new Stack();
 // console.log(stack.isEmpty());
 // console.log(stack.pop());
 // console.log(stack.print());
-=======
+
 
